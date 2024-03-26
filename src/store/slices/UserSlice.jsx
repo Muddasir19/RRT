@@ -10,7 +10,6 @@ const userSlice  = createSlice({
     }
 });
 
-// console.log(userSlice.actions);
-console.log("Hi")
+console.log(userSlice)
 
 export default  userSlice.reducer;
