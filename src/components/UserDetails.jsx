@@ -4,6 +4,7 @@ import DeleteAllUser from './DeleteAllUser';
 import { fakeUserData } from '../api';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../store/slices/UserSlice';
+import DisplayUsers from './DisplayUsers';
 
 const UserDetails = () => {
 
@@ -23,8 +24,7 @@ const UserDetails = () => {
                 <button onClick={ ()=> addNewUser(fakeUserData()) } >Add New Users</button>
             </div>
             <ul>
-                <li>hi</li>
-                <li>hiii</li>
+                <DisplayUsers/>
             </ul>
             <hr />
             <DeleteAllUser/>
